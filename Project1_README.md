@@ -30,7 +30,7 @@ My Docker image can be fethced using the command
 `docker pull deepanshpahwa/68b4291227c3`
 
 You can run the image by using command
-'docker run -p 8080:8080 deepanshpahwa/68b4291227c3'
+`docker run -p 8080:8080 deepanshpahwa/68b4291227c3`
 
 If you navigate to the URL mentioned in the beginning of the document, you will still see the same UI but in the backend, it is the Docker image running instead of tomcat deployted war file.
 
