@@ -1,26 +1,16 @@
-# ResFul Web Services (Using Java and AWS)
+# User Interface to access the Weather Forecast Application
 
-This application provides weather information to the developer in the form of JSON array. Various endpoints(GET, POST, DELETE) of the application can be used to access different kinds of weather data depending on the requirement.
+This application provides weather forecast data to the user. On navigating to the URL, the user is presented with a UI which takes adate input in the format of YYYYMMDD. On clicking submit, the UI fetches the information from the HW2 API and populates the data table on the right  of the input box.
 
 
-
-The current URL to access the API is http://ec2-18-223-149-213.us-east-2.compute.amazonaws.com:8080/WeatherAPI/api
-
-## Endpoints information
-| Method        | Endpoint URL    | Use   |
-| ------------- |:-------------:  | -----:|
-| GET           | /historical     |All the dates the database holds|
-| GET           | /historical/date|Weather for the day specified |
-| POST          | /historical     |(201 Created) |
-| DELETE        | /historical/date|(200 Deleted) |
-| GET           | /forecast/date  | Weather data of 7 days from mentioned date|
+The current URL of this application is: http://ec2-18-223-149-213.us-east-2.compute.amazonaws.com:8080/WeatherAPI/
 
 ## Overview
-The application is developed on plain Java using some third party libraries for support (GSON, Jackson). The application is deployed on Apache Tomcat version 8.
+The UI is developed in HTML using some CSS and Angular. Css is used beautification where as Angular is used for the processing of the http request and the dynamic populating of the table on response from the API.
 
-This application was then packed into a war file and deployed onto the same version of Apache Tomcat installed on an AWS EC2 instance.
+This UI is deployed on an Apache Tomcat serverdeployed on an AWS EC2 instance.The application was deployed on Tomcat bu using the deploy WAR file feature of Apache.
 
-The URL mentioned above is of the EC2 instance with 8080 to access the default port to take the user to the API.
+The URL mentioned above is of the EC2 instance with 8080 to access the default port to take the user to the application.
 
 ### Prerequisites
 Internet connectivity
